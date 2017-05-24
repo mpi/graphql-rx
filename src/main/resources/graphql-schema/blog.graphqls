@@ -1,0 +1,34 @@
+schema {
+    query: Query
+}
+
+type Query {
+    #hello(name: String = "World"): String!
+    blog: Blog!
+}
+
+type Blog {
+    title: String!
+    posts: [Post]
+}
+
+type Post {
+    id: ID!
+    title: String!
+    body: String!
+    publicationDate: String!
+    author: Author!
+    comments: [Comment]
+}
+
+type Author {
+    email: String!
+    fullName: String
+}
+
+type Comment {
+    id: ID!
+    author: Author!
+    commentDate: String!
+    body: String!
+}
