@@ -1,24 +1,16 @@
-target/
-!.mvn/wrapper/maven-wrapper.jar
+build
+.gradle
 
-### STS ###
-.apt_generated
-.classpath
-.factorypath
+npm-debug.log
+newrelic.jar
+
 .project
+.classpath
 .settings
-.springBeans
-
-### IntelliJ IDEA ###
-.idea
-*.iws
-*.iml
-*.ipr
-
-### NetBeans ###
-nbproject/private/
-build/
-nbbuild/
-dist/
-nbdist/
-.nb-gradle/
+.idea/*
+!.idea/codeStyleSettings.xml
+!.idea/encodings.xml
+!.idea/inspectionProfiles/
+!.idea/jsLibraryMappings.xml
+**/*.iml
+web/npm-debug.log.*
